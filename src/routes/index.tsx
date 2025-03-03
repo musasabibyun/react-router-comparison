@@ -19,7 +19,7 @@ export default function Index() {
         >
           This is a simple homepage with
           <Box component="span" sx={{ color: "#90caf9", mx: 1 }}>
-            React Router
+            TanStack Router
           </Box>
         </Typography>
       </Box>

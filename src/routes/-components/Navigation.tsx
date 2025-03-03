@@ -28,7 +28,7 @@ export default function Navigation() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          React Router App
+          TanStack Router App
         </Typography>
         <Box sx={{ display: "flex", gap: 2 }}>
           <Button color="inherit" component={Link} to="/">
