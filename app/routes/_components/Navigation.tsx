@@ -62,6 +62,9 @@ export default function Navigation() {
                 horizontal: "right",
               }}
             >
+              <MenuItem component={Link} to="/concerts/trending">
+                Trending
+              </MenuItem>
               <MenuItem component={NavLink} to="/concerts/tokyo">
                 Tokyo
               </MenuItem>

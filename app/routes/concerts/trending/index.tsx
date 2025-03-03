@@ -1,6 +1,6 @@
 import { Box, Typography, Container } from "@mui/material";
 
-export default function Home() {
+export default function Trending() {
   return (
     <Container maxWidth="sm">
       <Box sx={{ mt: 8, textAlign: "center" }}>
