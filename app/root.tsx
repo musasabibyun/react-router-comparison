@@ -6,6 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import Navigation from "./routes/_components/Navigation";
+import { Box } from "@mui/material";
 
 import type { Route } from "./+types/root";
 import "./app.css";
@@ -33,7 +35,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <Box
+          sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        >
+          <Navigation />
+          <Box component="main" sx={{ flexGrow: 1 }}>
+            {children}
+          </Box>
+        </Box>
         <ScrollRestoration />
         <Scripts />
       </body>
