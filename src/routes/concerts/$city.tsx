@@ -1,8 +1,12 @@
 import { Box, Typography, Container } from "@mui/material";
-import { useParams } from "react-router";
+import { createFileRoute, useParams } from "@tanstack/react-router";
+
+export const Route = createFileRoute("/concerts/$city")({
+  component: City,
+});
 
 export default function City() {
-  const { city } = useParams();
+  const { city } = useParams({ from: "/concerts/$city" });
 
   return (
     <Container maxWidth="sm">

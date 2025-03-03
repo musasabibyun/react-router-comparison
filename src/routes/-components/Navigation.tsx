@@ -7,7 +7,7 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { NavLink } from "react-router";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -31,10 +31,10 @@ export default function Navigation() {
           React Router App
         </Typography>
         <Box sx={{ display: "flex", gap: 2 }}>
-          <Button color="inherit" component={NavLink} to="/">
+          <Button color="inherit" component={Link} to="/">
             Home
           </Button>
-          <Button color="inherit" component={NavLink} to="/about">
+          <Button color="inherit" component={Link} to="/about">
             About
           </Button>
           <Box onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -62,10 +62,13 @@ export default function Navigation() {
                 horizontal: "right",
               }}
             >
-              <MenuItem component={NavLink} to="/concerts/tokyo">
+              <MenuItem component={Link} to="/concerts/trending">
+                Trending
+              </MenuItem>
+              <MenuItem component={Link} to="/concerts/tokyo">
                 Tokyo
               </MenuItem>
-              <MenuItem component={NavLink} to="/concerts/korea">
+              <MenuItem component={Link} to="/concerts/korea">
                 Korea
               </MenuItem>
             </Menu>

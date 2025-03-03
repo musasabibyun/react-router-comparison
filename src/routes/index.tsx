@@ -1,6 +1,11 @@
 import { Box, Typography, Container } from "@mui/material";
+import { createFileRoute } from "@tanstack/react-router";
 
-export default function Home() {
+export const Route = createFileRoute("/")({
+  component: Index,
+});
+
+export default function Index() {
   return (
     <Container maxWidth="sm">
       <Box sx={{ mt: 8, textAlign: "center" }}>
