@@ -4,8 +4,8 @@
 
 ## ブランチ構成
 
-- `react-router`: React Router v7 を使用した実装
-- `tanstack-router`: TanStack Router を使用した実装
+- [`react-router`](https://github.com/musasabibyun/react-router-comparison/tree/react-router): React Router v7 を使用した実装
+- [`tanstack-router`](https://github.com/musasabibyun/react-router-comparison/tree/tanstack-router): TanStack Router を使用した実装
 
 ## アプリケーションのページ構成
 
