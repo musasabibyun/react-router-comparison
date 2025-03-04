@@ -1,5 +1,5 @@
-import { Box, Typography, Container } from "@mui/material";
-import { createFileRoute } from "@tanstack/react-router";
+import { Box, Typography, Container, Button } from "@mui/material";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -22,6 +22,20 @@ export default function Index() {
             TanStack Router
           </Box>
         </Typography>
+
+        <Button color="primary" sx={{ marginTop: 10 }}>
+          {/* <Link
+            to="/news"
+            search={{
+              pageIndex: 3,
+              includeCategories: ["technology", "finance"],
+              sortBy: "date",
+              desc: true,
+            }}
+          >
+            Go to News
+          </Link> */}
+        </Button>
       </Box>
     </Container>
   );
